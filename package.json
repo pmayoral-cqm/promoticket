@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+
+  "scripts": {
+    "tw": "tailwindcss -i www/src/input.css -o www/src/tw.css --watch"
+  }
+}

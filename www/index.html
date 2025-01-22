@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/tw.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="w-full bg-white flex flex-col items-start min-h-screen">
+        <!-- Header Section -->
+        <div class="w-full  px-4 md:px-20 py-6 bg-white border-b border-zinc-300 flex justify-between items-center ">
+            <div class="flex items-center">
+                <div class="max-w-44 relative"  data-aos="fade-down"  >
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="flex gap-5 items-center">
+                <div class="flex gap-1 items-center">
+                    <!-- Button: Cómo participar -->
+                    <div class="p-3 rounded flex items-center gap-2">
+                        <div class="flex items-center gap-1" data-aos="fade-down" data-aos-delay="100">
+                            <div class="w-5 h-5 rounded-xl flex justify-center items-center">
+                                <div class="h-5 relative"></div>
+                            </div>
+                            <span class="text-zinc-800 text-sm font-semibold leading-tight">Cómo participar</span>
+                        </div>
+                    </div>
+                    <!-- Button: Estado de la participación -->
+                    <div class="p-3 rounded flex items-center gap-2" data-aos="fade-down" data-aos-delay="200">
+                        <div class="flex items-center gap-1">
+                            <div class="w-5 h-5 rounded-xl flex justify-center items-center">
+                                <div class="h-5 relative"></div>
+                            </div>
+                            <span class="text-zinc-800 text-sm font-semibold leading-tight">Estado de la participación</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main CTA Button -->
+                <div class="px-3 py-2 bg-zinc-800 rounded flex items-center gap-2" data-aos="fade-down" data-aos-delay="300">
+                    <span class="text-white text-base">Participar</span>
+                    <div class="w-6 h-6 rounded flex justify-center items-center">
+                        <div class="h-6 relative"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Section -->
+        <div class="w-full grow flex justify-center bg-[url('../img/bg-dots.png')] bg-center bg-cover ">
+            
+            <!-- Text Content Section -->
+            <div class="flex-grow w-full md:w-1/2 px-6 md:px-24 py-12 flex flex-col justify-center gap-5">
+                <h1 class="text-neutral-600 text-4xl md:text-5xl font-bold leading-tight" data-aos="fade-left" data-aos-delay="100">Tu confianza en Promoticket<br/>tiene premio</h1>
+                <p class="text-neutral-600 text-2xl md:text-3xl font-bold leading-9" data-aos="fade-left" data-aos-delay="200">Hasta 80€ en regalos</p>
+                <p class="text-neutral-600 text-base leading-normal" data-aos="fade-left" data-aos-delay="300">
+                    Por la compra y montaje de 2 o 4 neumáticos YOKOHAMA puedes hacerte con regalos de hasta 80€. Promoción válida para compras realizadas del 1 al 30 de noviembre, posibilidad de registro hasta el 15 de diciembre. Los clientes que cumplan con las condiciones de la campaña recibirán una Tarjeta regalo Amazon.es, El Corte Inglés o un Chequecarburante cuyo importe dependerá del nº de neumáticos y la dimensión de llanta.
+                </p>
+                <div class="text-zinc-800 text-base font-bold" data-aos="fade-left" data-aos-delay="400">Del 1 al 30 de noviembre</div>
+                <!-- CTA Button -->
+                <div class="px-3 py-2 bg-violet-500 w-28 rounded flex items-center gap-2" data-aos="fade-left" data-aos-delay="500">
+                    <span class="text-white text-base">Participar</span>
+                    <div class="w-6 h-6 flex justify-center items-center">
+                        <div class="h-6 relative"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="flex-grow w-full md:w-1/2 min-h-full p-6 flex justify-center items-center" data-aos="fade-right" data-aos-delay="400">
+               <div class="bg-[url('../img/hero2.jpg')] bg-center bg-cover w-full h-full rounded-xl"></div>
+            </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="w-full py-6 border-t border-zinc-300 flex justify-center items-center px-4 md:px-20" >
+            <div class="flex flex-wrap gap-5 md:gap-10">
+                <span class="text-zinc-800 text-sm" data-aos="fade-down" data-aos-delay="100" data-aos-offset="-200" >Política de privacidad</span>
+                <span class="text-zinc-800 text-sm" data-aos="fade-down" data-aos-delay="200" data-aos-offset="-200" >Política de Cookies</span>
+                <span class="text-zinc-800 text-sm" data-aos="fade-down" data-aos-delay="300" data-aos-offset="-200" >Bases legales</span>
+                <span class="text-zinc-800 text-sm" data-aos="fade-down" data-aos-delay="400" data-aos-offset="-200" >Contacto</span>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      easing: 'ease',
+      duration: 600,
+      startEvent: 'DOMContentLoaded',
+    });
+    </script>
+
+</body>
+</html>

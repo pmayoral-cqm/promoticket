@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Recipient email address
-    $destinatario = "pmayoral@chequemotiva.com";
+    $destinatario = "soporte@chequemotiva.com";
 
     // Email subject
     $asunto = "Emotivoo: Contacto desde campaña Ads";

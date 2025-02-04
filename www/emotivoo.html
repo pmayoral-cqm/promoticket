@@ -14,22 +14,50 @@
     h1,h2,h3,h4,h5 {
         font-family: "Montserrat", serif;
     }
+.hs-accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .hs-accordion-active {
+    background-color: #fbfbfb; /* Example: Add background when active */
+  }
+  .hs-accordion-active:hover {
+    background-color: #fbfbfb; /* Example: Add background when active */
+  }
+
+  .hs-accordion-content.hidden {
+    display: none; /* Ensure hidden state works properly */
+  }
+
 </style>
 
 <body>
 
 <!-- Main -->
     <div class="relative">
-        <header class="bg-white sm:bg-transparent absolute inset-x-0 top-0 z-10 w-full">
-            <div class="px-4 mx-auto sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-24 lg:h-20">
+        <header class="bg-white z-10 w-full ">
+            <div class="px-4 mx-auto sm:px-6 lg:px-12 py-6">
+                <div class="flex items-center justify-between">
+
                     <div class="flex-shrink-0">
                         <a href="#" title="" class="flex">
                             <img class="w-auto h-8" src="img/emotivoo-logo.svg" alt="" />
                         </a>
                     </div>
     
-    
+    <div class="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
+                    <a href="#" title="" class="text-base text-gray-700 transition-all duration-200 hover:text-blue-800"> Features </a>
+
+                    <a href="#" title="" class="text-base text-gray-700 transition-all duration-200 hover:text-blue-800"> Solutions </a>
+
+                    <a href="#" title="" class="text-base text-gray-700 transition-all duration-200 hover:text-blue-800"> Resources </a>
+
+                    <a href="#" title="" class="text-base text-gray-700 transition-all duration-200 hover:text-blue-800"> Pricing </a>
+
+                    <a href="#" title="" class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold transition-all rounded-full bg-blue-600 text-white hover:bg-blue-800"> Demo gratuita </a>
+                </div>
                     
                 </div>
             </div>
@@ -37,45 +65,34 @@
     
         <section class="bg-gray-100 overflow-hidden">
             <div class="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
-                <div class="relative flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+                <div class="relative flex items-center justify-center w-full order-2 lg:w-6/12">
                     <div class="absolute bottom-0 right-0 hidden lg:block">
                         <img class="object-contain w-auto h-48" src="img/lines.svg" alt="" />
                     </div>
     
-                    <div class="relative px-4 pt-32 pb-16 text-left sm:px-6 md:px-24 2xl:ps-32 2xl:pe-64 lg:py-24 ">
-                        <h1 class="text-4xl font-bold text-gray-800 sm:text-6xl">
-                            Motiva y Fideliza <br> con Emotivoo
+                    <div class="flex flex-col px-4 py-8 gap-4 text-left sm:px-6 lg:py-24 max-w-[620px]">
+                        <h1 class="text-4xl font-bold text-blue-950 sm:text-4-xl">
+                            Motiva y fideliza tu red comercial con incentivos personalizados 
                         </h1>
-                        <p class="mt-4 lg:mt-8 text-xl text-gray-700">Crea programas de incentivos personalizados para tu equipo y clientes en tiempo récord.</p>
+                        <p class=" text-lg sm:text-xl text-gray-700 ">Desarrolla plataformas de incentivos y fidelización en poco tiempo, adaptadas a tu equipo comercial, clientes y colaboradores.</p>
     
-                        <form action="#" method="POST" class="max-w-xl mx-auto mt-8 lg:mx-0 sm:bg-transparent lg:mt-12 rounded-xl">
-                            <div class="flex flex-col items-start sm:flex-row">
-                                <div class="flex-1 w-full min-w-0">
-                                    <div class="relative text-gray-400 focus-within:text-orange-600">
-                                        <label for="email" class="sr-only"></label>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Ingresa tu mail para empezar"
-                                            class="block w-full px-4 py-4 text-base text-left text-black placeholder-gray-500  border-transparent rounded-full sm:rounded-r-none rounded-l-full sm:text-left focus:border-transparent focus:outline-transparent focus:ring-0 caret-orange-500"
-                                            required=""
-                                        />
-                                    </div>
-                                </div>
+                    
 
-                                <button type="submit" class="inline-flex items-center justify-center w-full px-8 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full sm:rounded-none sm:rounded-r-full sm:w-auto sm:mt-0 hover:bg-blue-800">
-                                    Empezar
-                                </button>
-                            </div>
-                        </form>
+                        <div class="flex flex-col md:flex-row gap-4 mt-4">
+                            <a href="#" class="flex w-full sm:w-64 items-center justify-center  px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full hover:bg-blue-800">
+                               Demo gratis
+                            </a>
+                            <a href="#" class="flex w-full sm:w-64 items-center justify-center  px-8 py-4 font-semibold text-blue-800 transition-all duration-200 border-2 border-blue-800 border rounded-full hover:bg-blue-800 hover:text-white">
+                              Agendar una llamada
+                            </a>
+                        </div>
                        
                     </div>
     
                    
                 </div>
     
-                <div class="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-5/12">
+                <div class="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-6/12">
                     <div class="absolute inset-0">
                         <img class="object-cover w-full h-full" src="img/main-image-emotivoo.jpg" alt="" />
                     </div>
@@ -94,14 +111,45 @@
     <div class="px-4 mx-auto max-w-[1350px] sm:px-6 lg:px-8">
         <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
            
-            <div class="2xl:pl-16">
-                <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">Motiva y Fideliza
-                    con Emotivoo</h2>
-                <p class="text-xl leading-relaxed text-gray-700 mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia conse duis enim velit mollit. Exercitation veniam.</p>
-                <p class="mt-5 text-xl leading-relaxed text-gray-700">Velit officia conse duis enim velit mollit. Exercit ation veniam consequat sunt nostrud amet.</p>
+            <div class="flex flex-col gap-4">
+                <h2 class="text-3xl font-bold leading-tight text-blue-950 sm:text-4xl lg:leading-tight">¿Por qué elegir Emotivoo para tu red comercial? </h2>
+
+                <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full mt-4">
+                    <img src="img/icon-RocketLaunch.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Mejora tus resultados:</b> Aumenta la motivación con programas de incentivos adaptados. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Coins.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Reduce tus costes:</b> Automatiza la gestión de programas de fidelización. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <!-- Icon + texto -->
+                 <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Smiley.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Multiplica la satisfacción:</b> Eleva el compromiso con tarjetas regalo corporativas personalizadas. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                  <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Robot.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Automatiza tus procesos:</b> Gestiona programas de incentivos en una sola plataforma. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <a href="#" class="mt-5 flex w-full sm:w-80 items-center justify-center  px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full hover:bg-blue-800">
+                    Solicita tu consulta gratuita.
+                 </a>
+                 
+    
             </div>
              
-                <div class="sm:pl-12 pr-6">
+                <div class="sm:pl-12 sm:pr-6">
                    <img class="relative rounded-xl" src="img/second-image-emotivoo.jpg" alt="" />
                 </div>
          
@@ -122,17 +170,35 @@
             
             
             
-            <div class="2xl:pl-16">
-                <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">Motiva y Fideliza
-                    con Emotivoo</h2>
-                <p class="text-xl leading-relaxed text-gray-700 mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia conse duis enim velit mollit. Exercitation veniam.</p>
-                <p class="my-5 text-xl leading-relaxed text-gray-700">Velit officia conse duis enim velit mollit. Exercit ation veniam consequat sunt nostrud amet.</p>
-                <a href="#" class="inline-flex items-center justify-center w-full px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full sm:w-auto sm:mt-0 hover:bg-blue-800">
-                    Empezar
-                </a>
+            <div class="flex flex-col gap-4">
+                <h2 class="text-3xl font-bold leading-tight text-blue-950 sm:text-4xl lg:leading-tight">¿Cómo funciona Emotivoo?</h2>
+                  <!-- Icon + texto -->
+                  <div class="flex items-start gap-2 w-full mt-4">
+                    <img src="img/icon-ChartPolar.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Define tu programa:</b> Personaliza las estrategias de incentivos y fidelización según tus objetivos. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <!-- Icon + texto -->
+                 <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Gift.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Entrega recompensas:</b> Utiliza tarjetas regalo y programas de puntos para motivar a tu equipo. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                  <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-ChartPie.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Mide los resultados:</b>Evalúa el impacto con reportes detallados y optimiza tu estrategia. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <a href="#" class="mt-5 flex w-full sm:w-64 items-center justify-center  px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full hover:bg-blue-800">
+                    Lo quiero
+                 </a>
             </div>
 
-            <div class="sm:pl-12 pr-6 md:order-first">
+            <div class="sm:pl-12 sm:pr-6 md:order-first">
                 <img class="relative rounded-xl" src="img/second-image-emotivoo.jpg" alt="" />
              </div>
 
@@ -149,14 +215,56 @@
     <div class="px-4 mx-auto max-w-[1350px] sm:px-6 lg:px-8">
         <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
            
-            <div class="2xl:pl-16">
-                <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">Motiva y Fideliza
-                    con Emotivoo</h2>
-                <p class="text-xl leading-relaxed text-gray-700 mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia conse duis enim velit mollit. Exercitation veniam.</p>
-                <p class="mt-5 text-xl leading-relaxed text-gray-700">Velit officia conse duis enim velit mollit. Exercit ation veniam consequat sunt nostrud amet.</p>
+            <div class="flex flex-col gap-4">
+                <h2 class="text-3xl font-bold leading-tight text-blue-950 sm:text-4xl lg:leading-tight">Todo lo que necesitas en una sola plataforma </h2>
+                 <!-- Icon + texto -->
+                 <div class="flex items-start gap-2 w-full mt-4">
+                    <img src="img/icon-GlobeHemisphereWest.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Gestión fácil y multi país:</b> Administra programas de fidelización en una plataforma intuitiva.  </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <!-- Icon + texto -->
+                 <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Path.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Mecánicas personalizadas:</b> Diferentes modelos de incentivos según tus necesidades.  </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                  <!-- Icon + texto -->
+                  <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-UsersThree.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Estructura jerárquica:</b> Diferentes niveles de acceso.  </p>
+                </div>
+                 <!-- Icon + texto -->
+                  
+                   <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-PenNib.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Personalización total:</b> Diseño alineado con tu identidad de marca. </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                   <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Envelope.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Comunicaciones automatizadas:</b>  Notificaciones personalizadas.  </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                   <!-- Icon + texto -->
+                <div class="flex items-start gap-2 w-full">
+                    <img src="img/icon-Cardholder.svg" alt="">
+                    <p class="text-lg leading-relaxed text-gray-700"><b>Amplio catálogo de incentivos:</b> Accede a miles de opciones con tarjetas regalo digitales.  </p>
+                </div>
+                 <!-- Icon + texto -->
+
+                 <a href="#" class="mt-5 flex w-full sm:w-64 items-center justify-center  px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full hover:bg-blue-800">
+                    Lo quiero
+                 </a>
             </div>
              
-                <div class="sm:pl-12 pr-6">
+                <div class="sm:pl-12 sm:pr-6">
                     <img class="relative rounded-xl" src="img/second-image-emotivoo.jpg" alt="" />
                 </div>
          
@@ -170,9 +278,355 @@
     
         
 
+<!-- Testimonials -->
+<section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-4xl sm:px-6 lg:px-8">
+        
+            <h2 class="text-3xl font-bold leading-tight text-blue-950 sm:text-4xl lg:leading-tight text-center">Clientes que ya confían en Emotivoo </h2>
+       
+
+        <div class="grid max-w-xl grid-cols-1 mx-auto mt-8 text-center lg:max-w-full sm:mt-12 lg:grid-cols-2 gap-x-6 xl:gap-x-12 gap-y-6">
+
+           <!-- blockquote -->
+           <div class="overflow-hidden bg-white rounded-xl border border-gray-200">
+            <div class="px-6 py-6">
+              <div class="flex gap-2 items-center">
+  
+                <img src="img/avatar-1.png" alt="" class="w-12 h-12">
+  
+                <div class="min-w-0 ">
+                  <p class="text-base font-semibold text-gray-800 truncate">Maribel Bark</p>
+                  <div class=" flex gap-x-1 mt-1">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                  </div>
+                </div>
+  
+              </div>
+              <blockquote class="mt-5">
+                <p class="text-sm md:text-base text-gray-500 text-left">
+                    Gracias a Emotivoo, nuestra red comercial ha aumentado su rendimiento en un 30%
+                </p>
+              </blockquote>
+            </div>
+          </div>
+            <!-- End blockquote -->
+
+            <!-- blockquote -->
+           <div class="overflow-hidden bg-white rounded-xl border border-gray-200">
+            <div class="px-6 py-6">
+              <div class="flex gap-2 items-center">
+  
+                <img src="img/avatar-2.png" alt="" class="w-12 h-12">
+  
+                <div class="min-w-0 ">
+                  <p class="text-base font-semibold text-gray-800 truncate">Maribel Bark</p>
+                  <div class=" flex gap-x-1 mt-1">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                    <img src="img/icon-star.svg" alt="" class="size-4">
+                  </div>
+                </div>
+  
+              </div>
+              <blockquote class="mt-5">
+                <p class="text-sm md:text-base text-gray-500 text-left">
+                    Las tarjetas regalo corporativas fueron clave para fidelizar a nuestro equipo de ventas. 
+                </p>
+              </blockquote>
+            </div>
+          </div>
+            <!-- End blockquote -->
+
+          
+        </div>
+    </div>
+</section>
+
+<!-- End Testimonials -->
+
+
+<!-- contact form -->
+<section class="py-10 sm:py-16 lg:py-24 bg-[url('../img/bg-contact.png')] bg-no-repeat bg-contain bg-center">
+    <div class="px-4 mx-auto max-w-4xl sm:px-6 lg:px-8">
+
+        <h2 class="text-3xl font-bold leading-tight text-blue-950 sm:text-4xl lg:leading-tight text-center">Motiva y fideliza a tu <br> equipo con Emotivoo</h2>
+       
+
+
+
+        <form class="space-y-6 max-w-md mx-auto p-8 bg-gray-50 rounded-lg border border-gray-200 mt-8">
+            <!-- Nombre -->
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-gray-900">Nombre</label>
+              <div class="mt-2">
+                <input 
+                  type="text" 
+                  name="nombre" 
+                  id="nombre" 
+                  placeholder="Escribe tu nombre" 
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-indigo-600 sm:text-sm"
+                />
+              </div>
+            </div>
+          
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
+              <div class="mt-2">
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="email" 
+                  placeholder="Escribe tu email" 
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-indigo-600 sm:text-sm"
+                />
+              </div>
+            </div>
+          
+            <!-- Teléfono -->
+            <div>
+              <label for="telefono" class="block text-sm font-medium text-gray-900">Teléfono</label>
+              <div class="mt-2">
+                <input 
+                  type="tel" 
+                  name="telefono" 
+                  id="telefono" 
+                  placeholder="Escribe tu teléfono" 
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-indigo-600 sm:text-sm"
+                />
+              </div>
+            </div>
+          
+            <!-- Mensaje -->
+            <div>
+              <label for="mensaje" class="block text-sm font-medium text-gray-900">Mensaje</label>
+              <div class="mt-2">
+                <textarea 
+                  name="mensaje" 
+                  id="mensaje" 
+                  rows="4" 
+                  placeholder="Escribe tu mensaje" 
+                  class="block w-full py-2 px-3 border border-gray-300 rounded-md text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-indigo-600 sm:text-sm"
+                ></textarea>
+              </div>
+            </div>
+          
+            <!-- Botón -->
+            <div class="mt-4">
+              <button 
+                type="submit" 
+                class="flex w-full sm:w-64 items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full hover:bg-blue-800"
+              >
+                Solicita más información
+              </button>
+            </div>
+          </form>
+          
+        
+    </div>
+    </section>
+ <!-- End contact form -->
+
+
+<!-- FAQ -->
+<div class="w-full bg-gray-50 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-10"> 
+    <!-- Title -->
+       <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight ">Resolvemos tus dudas</h2>  
+      <p class="mt-1 text-gray-600 ">Answers to the most frequently asked questions.</p>
+    </div>
+    <!-- End Title -->
+  
+    <div class="max-w-2xl mx-auto">
+      <!-- Accordion -->
+      <div class="hs-accordion-group flex flex-col gap-3">
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
+            Pregunta 1 
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one" style="height: 0px;">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-two">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
+            Pregunta 2
+             <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-two">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
+            Pregunta 3
+             <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-three">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three">
+            Pregunta 4
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-four">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four">
+            Pregunta 5
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-five">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
+            Pregunta 6
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-six">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six">
+            Pregunta 7
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4" id="hs-basic-with-title-and-arrow-stretched-heading-five">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
+            Pregunta 8
+            <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five" style="height: 0px;">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 hover:bg-gray-50 hs-accordion hs-accordion-active:bg-gray-100 rounded-xl px-6 py-4 " id="hs-basic-with-title-and-arrow-stretched-heading-five">
+          <button class="hs-accordion-toggle group  inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-emvi-600 " aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
+            Pregunta 9
+          <svg class="hs-accordion-active:hidden block flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg class="hs-accordion-active:block hidden flex-shrink-0 size-5 text-gray-600 group-hover:text-emvi-600 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>
+          </button>
+          <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
+            <p class="text-gray-800 pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+  
+     
+  
+      
+      </div>
+      <!-- End Accordion -->
+    </div>
+  </div>
+ <!-- End FAQ -->
+
 
     
 
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all accordion toggle buttons
+      const accordionToggles = document.querySelectorAll(".hs-accordion-toggle");
+  
+      accordionToggles.forEach(toggle => {
+        toggle.addEventListener("click", function () {
+          const content = this.nextElementSibling; // Get the associated accordion content
+          const accordion = this.closest(".hs-accordion"); // Get the accordion container
+          const isExpanded = this.getAttribute("aria-expanded") === "true";
+  
+          if (isExpanded) {
+            // Close the accordion
+            content.style.height = `${content.scrollHeight}px`; // Set height to current value for transition
+            requestAnimationFrame(() => {
+              content.style.height = "0px"; // Animate to 0px
+            });
+  
+            this.setAttribute("aria-expanded", "false");
+            accordion.classList.remove("hs-accordion-active"); // Remove active class
+  
+            content.addEventListener("transitionend", function onTransitionEnd() {
+              content.classList.add("hidden"); // Ensure it's hidden after animation
+              content.style.height = ""; // Reset inline height to prevent issues
+              content.removeEventListener("transitionend", onTransitionEnd);
+            });
+          } else {
+            // Open the accordion
+            content.classList.remove("hidden"); // Make it visible first
+            content.style.height = "0px"; // Start at 0 height
+  
+            // Force reflow to ensure height recalculation
+            content.offsetHeight; // This line forces a reflow
+  
+            content.style.height = `${content.scrollHeight}px`; // Animate to full height
+            this.setAttribute("aria-expanded", "true");
+            accordion.classList.add("hs-accordion-active"); // Add active class
+  
+            content.addEventListener("transitionend", function onTransitionEnd() {
+              content.style.height = "auto"; // Reset height to auto after animation
+              content.removeEventListener("transitionend", onTransitionEnd);
+            });
+          }
+        });
+      });
+    });
+  </script>
+  
+  
+  
 
 </body>
 

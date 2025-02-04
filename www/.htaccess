@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Skip processing for the /promo/ directory
+RewriteRule ^promo/ - [L]
+
+# Redirect URLs without extensions to .html or .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]

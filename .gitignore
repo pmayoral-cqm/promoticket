@@ -1,5 +1,5 @@
 # Ignore specific file
-send_form.php
+www/send_form.php
 
 # Common ignores
 .DS_Store

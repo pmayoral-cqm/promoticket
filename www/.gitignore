@@ -1,0 +1,11 @@
+# Ignore specific file
+send_form.php
+
+# Common ignores
+.DS_Store
+*.log
+node_modules/
+vendor/
+.env
+.idea/
+Thumbs.db
